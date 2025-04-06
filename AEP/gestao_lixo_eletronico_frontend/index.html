@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão Sustentável - Login</title>
+
+    <link rel="icon" href="imagens/reciclar.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <div class="form-panel login-panel">
+            <form id="formLogin">
+                <h1>Acessar Sistema</h1>
+                <div class="social-options">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use suas credenciais</span>
+                <input type="email" id="inputEmailLogin" placeholder="Email" required />
+                <input type="password" id="inputSenhaLogin" placeholder="Senha" required />
+                <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+                <button type="submit" class="btn-primary">Entrar</button>
+            </form>
+        </div>
+        <div class="form-panel register-panel">
+            <form id="formRegistro">
+                <h1>Criar Nova Conta</h1>
+                <div class="social-options">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>ou preencha seus dados</span>
+                <input type="text" id="inputNomeRegistro" placeholder="Nome Completo" required />
+                <input type="email" id="inputEmailRegistro" placeholder="Email" required />
+                <input type="password" id="inputSenhaRegistro" placeholder="Senha" required />
+                <button type="submit" class="btn-primary">Cadastrar</button>
+            </form>
+        </div>
+        <div class="welcome-overlay">
+            <div class="overlay-content">
+                <div class="welcome-panel welcome-back">
+                    <h1>Bem-vindo de volta!</h1>
+                    <p>Para acessar nosso sistema de gestão sustentável, faça login com suas credenciais</p>
+                    <button class="btn-secondary" id="btnMostrarLogin">Entrar</button>
+                </div>
+                <div class="welcome-panel welcome-new">
+                    <h1>Olá, EcoAmigo!</h1>
+                    <p>Junte-se a nós na jornada por um mundo mais sustentável</p>
+                    <button class="btn-secondary" id="btnMostrarRegistro">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="notificacao" class="notification-message"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
